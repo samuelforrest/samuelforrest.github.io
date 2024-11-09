@@ -234,4 +234,18 @@
 
 </body>
 
+<script src="https://rss.bloople.net/?url=https://samuelforrest.blogspot.com/feeds/posts/default&showtitle=false&type=json" async></script>
+<div id="blog-posts"></div>
+<script>
+  fetch('https://yourblogname.blogspot.com/feeds/posts/default?alt=json')
+    .then(response => response.json())
+    .then(data => {
+      const posts = data.feed.entry.map(entry => {
+        return `<h3>${entry.title.$t}</h3><p>${entry.content.$t}</p>`;
+      }).join('');
+      document.getElementById('blog-posts').innerHTML = posts;
+    })
+    .catch(error => console.error('Error loading blog posts:', error));
+</script>
+
 </html>
