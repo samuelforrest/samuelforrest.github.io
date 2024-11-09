@@ -1,473 +1,177 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 
-<head>
-  <!-- Google Tag JavaScript Implementation -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBLC7B9NCC"></script>
+  <head>
 
-  <script>
+    <!--Google Tag Javascript Implementation for Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBLC7B9NCC"></script>
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!--Meta Tags for SEO Optimisation-->
+    <meta charset="UTF-8">
+
+    <!--Responsive Design Meta Tag-->
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!--Page Title as appears in Browser Tab / SEO-->
+    <title>Samuel Forrest's Blog</title>
+
+    <!--Link to Font Awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!--Google Fonts for Roboto font only-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Link to internal CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
   
-    gtag('config', 'G-TBLC7B9NCC');
+    <!--SEO Optimisation for common search engines-->
+    <meta name="description" content="Explore Samuel Forrest's unique and extensive development portfolio, comprising of coding projects, mobile applications and websites!"/>
+    <meta name="keywords" content="Portfolio, Coding, HTML, React Native, JavaScript, TypeScript, Programming, Python, Aviation, Samuel Forrest, Samuel James Forrest, Samuel Forrest Developer"/>
+    <link rel="canonical" href="https://www.samuelforrest.me/">
+    <meta name="robots" content="index" />
+    <meta name="author" content="Samuel Forrest" />
+    <meta name="copyright" content="©2024 Samuel Forrest's Portfolio">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="geo.region" content="GB" />
   
-  </script>
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Samuel Forrest's Portfolio">
+
+    <!--Must update OG Tags description and Image when changed in meta description property.-->
+    <meta property="og:description" content="Explore Samuel Forrest's unique and extensive development portfolio, comprising of coding projects, mobile applications and websites!">
+    <meta property="og:image" content="https://www.samuelforrest.me/assets/img/profile-img.png">
+    <meta property="og:url" content="https://www.samuelforrest.me/">
   
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Samuel Forrest's Portfolio">
+    <meta name="twitter:description" content="Explore Samuel Forrest's unique and extensive development portfolio, comprising of coding projects, mobile applications and websites!">
+    <meta name="twitter:image" content="https://www.samuelforrest.me/assets/img/profile-img.png">
   
-  <!--SEO Optimisation for common search engines-->
-  <title>Samuel Forrest's Portfolio</title>
-  <meta name="description" content="Explore Samuel Forrest's unique and extensive development portfolio, comprising of coding projects, mobile applications and websites!"/>
-  <meta name="keywords" content="Portfolio, Coding, HTML, React Native, JavaScript, TypeScript, Programming, Python, Aviation, Samuel Forrest, Samuel James Forrest, Samuel Forrest Developer"/>
-  <link rel="canonical" href="https://www.samuelforrest.me/">
-  <meta name="robots" content="index" />
-  <meta name="author" content="Samuel Forrest" />
-  <meta name="copyright" content="©2024 Samuel Forrest's Portfolio">
-  <meta http-equiv="Content-Language" content="en" />
-  <meta name="rating" content="General" />
-  <meta name="revisit-after" content="2 days" />
-  <meta name="referrer" content="no-referrer-when-downgrade" />
-  <meta name="geo.region" content="GB" />
+    <!-- Favicons for different browser platforms -->
+    <link href="assets/img/profile-img.png" rel="icon">
+    <link href="assets/img/profile-img.png" rel="apple-touch-icon">
 
-  <!-- Open Graph Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Samuel Forrest's Portfolio">
-  <!--Must update OG Tags description and Image when changed in meta description property.-->
-  <meta property="og:description" content="Explore Samuel Forrest's unique and extensive development portfolio, comprising of coding projects, mobile applications and websites!">
-  <meta property="og:image" content="https://www.samuelforrest.me/assets/img/profile-img.png">
-  <meta property="og:url" content="https://www.samuelforrest.me/">
+  </head>
 
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Samuel Forrest's Portfolio">
-  <meta name="twitter:description" content="Explore Samuel Forrest's unique and extensive development portfolio, comprising of coding projects, mobile applications and websites!">
-  <meta name="twitter:image" content="https://www.samuelforrest.me/assets/img/profile-img.png">
-
-
-  <!-- Favicons -->
-  <link href="assets/img/profile-img.png" rel="icon">
-  <link href="assets/img/profile-img.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#skills"><i class="bi bi-person navicon"></i><span>Skills</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
+<body>
+  <header>
+    <h1>Samuel Forrest's Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="portfolio.html">Portfolio</a>
+      </nav>
   </header>
 
-  <main class="main">
+  <main>
+    <section class="intro">
+      <h2>Welcome to my website!</h2>
+        <p>This is my personal website. Here, you can find my blog posts, projects, devloping portfolio and more!</p>
+        <br>
+        <p>Please feel free to check out my <b> Computer Science AI & Software Development Blog </b> on the site <a href="/blog.html">here</a> or on blogger <a href="https://samuelforrest.blogspot.com">here.</a></p>
+        <br>
+        <p>For those Computer Science <b>nerdsss</b>, my website is created using the Github Pro's Pages, and is developed using HMTL, CSS and JavaScript. 
+    </section>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section class="intro">
+      <h2>Update 09/11/24:</h2>
+        <p>The page is live on the samuelforrest.me domain!</p>
+        <br>
+        <p>To view the source and commit history, please visit my GitHub repository <a href="https://github.com/samuelforrest/samuelforrest.github.io">here</a>.</p>
+    </section>
 
-      <img src="assets/img/hero-bg.avif" alt="">
+    <section class="intro">
+      <h2>Contact Information:</h2>
+        <p>For any questions please email me here: <a href="mailto:samueljforrest@outlook.com?subject=Hello%20Samuel&body=I%20would%20like%20to%20connect%20with%20you.">Email me</a> </p>
+        <br>
+        <p>Alternatively, hit me up with my socials below:</p>
+    </section>
+            
+    <div class="last_updated">
+      <p>Last Page Update: 09/11/24</p>
+      <p>Last GitHub Commit: 09/11/24 by Samuel Forrest</p>
+    </div>
 
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Samuel Forrest</h2>
-            <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Student">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://x.com/samueljforrest" target="_blank"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://www.youtube.com/@a350ceo" target="_blank"><i class="bi bi-youtube"></i></a>
-              <a href="https://instagram.com/samueljforrest" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/samueljforrest" target="_blank"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <hr></hr>
-            <h3>This Website is still in Development... Some Information may be incorrect.</h3>
+  <section id="skills" class="skills section">
+    
+    <div class="section-title">
+      <h2>My Coding Skills</h2>
+      <p>(Relative Scale %)</p>
+    </div>
+
+    <div class="skills-content">
+      <div class="skills-column">
+
+        <div class="progress">
+          <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span class="skill"><span>JavaScript / TypeScript</span> <i class="val">60%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 60%;"></div>
           </div>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>A Computer Science student with a passion for software development and coding. I specialise in working on large applications for both the web and mobile.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Computer Science Student &amp; Web / App Developer.</h2>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2008</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>samuelforrest.me</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>TBD</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Greater London, UK</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>16</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>A Level / GCSE</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>samueljforrest@outlook.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Not Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              Personal Descriptions and references coming soon!
-            </p>
+      <div class="skills-column">
+        <div class="progress">
+          <span class="skill"><span>PHP/SQL</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 80%;"></div>
           </div>
         </div>
 
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>TBC</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript / TypeScript</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+        <div class="progress">
+          <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 90%;"></div>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP/SQL</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>SEO</span> <i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+        <div class="progress">
+          <span class="skill"><span>SEO (Search Engine Optimisation)</span> <i class="val">40%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 40%;"></div>
           </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>As a Computer Science Student with a passion for software development and coding, my portfolio of personal projects and application is always growing, feel free to check it out below! -Currently in Development</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>TBD</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Any Questions? Please use this form below or email me!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Greater London</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Me</h3>
-                <p>TBD</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Me</h3>
-                <p>samueljforrest@outlook.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Samuel Forrest</h3>
-      <p>Passionate Computer Science Student</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/samueljforrest" target="_blank"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.youtube.com/@a350ceo" target="_blank"><i class="bi bi-youtube"></i></a>
-        <a href="https://instagram.com/samueljforrest" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/samueljforrest" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Samuel Forrest</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
+
+  </section>
+
+</main>
+
+  <footer>
+    <p class="footer_name">Samuel Forrest</p>
+    <p class="footer_addition">Passionate Computer Science Student</p>
+    <hr>
+    <p class="footer_copyright">&copy; 2024 Samuel Forrest. All rights reserved.</p>
+    <hr>
+
+    <div class="social-icons">
+      <a href="https://instagram.com/samueljforrest" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/samuelforrest" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/samuelforrest" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://samuelforrest.blogspot.com" target="_blank"><i class="fab fa-blogger"></i></a>
+    </div>
   </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 
