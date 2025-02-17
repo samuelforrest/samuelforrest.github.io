@@ -1,6 +1,6 @@
-/* ----- POPPINS FONT Link ----- */
+/* POPPINS FONT Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-/* ----- VARIABLES ----- */
+
 :root{
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
@@ -12,18 +12,18 @@
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
-/* ----- BASE ----- */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* ----- SMOOTH SCROLL ----- */
+
 html{
     scroll-behavior: smooth;
 }
-/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+
 ::-webkit-scrollbar{
     width: 10px;
     border-radius: 25px;
@@ -38,8 +38,7 @@ html{
 ::-webkit-scrollbar-thumb:hover{
     background: #bbb;
 }
-/* ---##-- REUSABLE CSS --##--- */
-/* ----- GLOBAL BUTTON DESIGN ----- */
+
 .btn{
     font-weight: 500;
     padding: 12px 20px;
@@ -56,11 +55,11 @@ html{
     background: var(--second-color);
     color: var(--color-white);
 }
-/* ----- GLOBAL ICONS DESIGN ----- */
+
 i{
     font-size: 16px;
 }
-/* ------- BASE -------- */
+
 body{
     background: var(--body-color);
 }
@@ -68,7 +67,7 @@ body{
     width: 100%;
     position: relative;
 }
-/* ----- NAVIGATION BAR ----- */
+
 nav{
     position: fixed;
     display: flex;
@@ -133,18 +132,18 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
-/* ----- WRAPPER DESIGN ----- */
+
 .wrapper{
     padding-inline: 10vw;
 }
-/* ----- FEATURED BOX ----- */
+
 .featured-box{
     position: relative;
     display: flex;
     height: 100vh;
     min-height: 700px;
 }
-/* ----- FEATURED TEXT BOX ----- */
+
 .featured-text{
     position: relative;
     display: flex;
@@ -207,7 +206,7 @@ nav{
 .icon:hover{
     color: var(--first-color);
 }
-/* ----- FEATURED IMAGE BOX ----- */
+
 .featured-image{
     display: flex;
     justify-content: right;
@@ -253,7 +252,7 @@ nav{
 .scroll-btn i{
     font-size: 20px;
 }
-/* ----- MAIN BOX ----- */
+
 .section{
     padding-block: 5em;
 }
@@ -267,7 +266,7 @@ nav{
     display: flex;
     width: 50%;
 }
-/* -- ## --- RESUABLE CSS -- ## -- */
+
 .top-header{
     text-align: center;
     margin-bottom: 5em;
@@ -286,7 +285,7 @@ h3{
     color: var(--text-color-second);
     margin-bottom: 15px;
 }
-/* ----- ABOUT INFO ----- */
+
 .about-info{
     position: relative;
     display: flex;
@@ -315,7 +314,7 @@ h3{
 .about-btn button:hover{
     background: var(--first-color-hover);
 }
-/* ----- ABOUT / SKILLS BOX ----- */
+
 .skills-box{
     margin: 10px;
 }
@@ -334,7 +333,7 @@ h3{
     padding: 2px 10px;
     border-radius: 5px;
 }
-/* ----- PROJECTS BOX ----- */
+
 .project-container{
     display: flex;
     width: 100%;
@@ -422,7 +421,7 @@ h3{
     color: #777;
     z-index: 2;
 }
-/* ----- CONTACT FORM ----- */
+
 .form-control{
     display: flex;
     flex-direction: column;
@@ -467,7 +466,7 @@ textarea{
     font-size: 18px;
     rotate: -45deg;
 }
-/* ----- FOOTER BOX ----- */
+
 footer{
     display: flex;
     justify-content: center;
@@ -504,7 +503,7 @@ footer{
 .last_commit_text{
     font-size: 12px;
 }
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+
 @media only screen and (max-width: 1024px){
     .featured-text{
         padding: 0;
@@ -514,7 +513,7 @@ footer{
         height: 320px;
     }
 }
-/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
+
 @media only screen and (max-width: 900px) {
     .nav-button{
         display: none;
@@ -591,7 +590,7 @@ footer{
         width: 80%;
     }
 }
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;
