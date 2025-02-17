@@ -66,7 +66,7 @@ reset: true
 srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
 
-/* ----- CHANGE ACTIVE LINK ----- */
+/* CHANGE ACTIVE LINK */
 
 const sections = document.querySelectorAll('section[id]')
 function scrollActive() {
