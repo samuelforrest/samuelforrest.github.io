@@ -1,27 +1,37 @@
+<!--and no, this website wasn't made by AI, wouldn't that be ironic?-->
+<!--LAST CODE EDIT: 17/04/2025-->
+<!--VIEW GITHUB FOR SOURCE CODE: https://github.com/samuelforrest-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TBLC7B9NCC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!--START OF HEAD-->
 
-  gtag('config', 'G-TBLC7B9NCC');
-</script>
     <!--Basic Meta Tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--StyleSheet Connectors-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--SEO Meta Tags, Google-->
-    <title>Samuel Forrest Portfolio</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <meta name="description" content="Samuel Forrest's Portfolio - An A Level Computer Science Student passionate about creating websites and apps!">
-    <meta name="keywords" content="Samuel Forrest, Sam Forrest, portfolio, developer, React Native, Python, aviation, supersonic travel, A Level Computer Science, mobile app development, software engineering, A Level, Computer Science, Github, Computer Science Blog">
+    <link rel="stylesheet" href="/assets/globals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <!--Website Title, Google, Searchbar-->
+    <title>Samuel Forrest | CV</title>
+    <!--General Favicon-->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!--16x16 favicon-->
+    <link rel="icon" href="assets/favicon-16x16.png" type="image/png" sizes="16x16">
+    <!--32x32 favicon-->
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <!--Android Chrome-->
+    <link rel="icon" href="assets/android-chrome-192x192.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="assets/android-chrome-512x512.png" type="image/png" sizes="512x512">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <!--Optional for specific browsers or platforms-->
+    <meta name="msapplication-TileImage" content="assets/android-chrome-192x192.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!--Google Meta SEO-->
+    <meta name="description" content="The professional CV of Samuel Forrest | A Level Student, Tutor, Aviation Enthusiast & Developer">
+    <meta name="keywords" content="Samuel Forrest, CV, Resume, Computer Science Student, Software Engineer, Aspiring Developer, Aviation Enthusiast, Greater London, UK, A Level Computer Science, Programmer, React Native, JavaScript, Python, OCR Computer Science, Edexcel Maths, AQA Physics, Tech CV, Student Developer, App Developer, Software Engineering, Teddington, Weybridge, Sixth Form Student">
     <meta name="author" content="Samuel Forrest">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -31,267 +41,408 @@
     <meta name="geo.region" content="GB">
     <meta name="geo.placename" content="London, UK">
     <!--Open Graph Metadata Tags (Social Media)-->
-    <meta property="og:title" content="Samuel Forrest | Developer & Aviation Enthusiast">
-    <meta property="og:description" content="Samuel Forrest's Portfolio - An A Level Computer Science Student passionate about creating websites and apps!">
-    <meta property="og:image" content="https://samuelforrest.me/images/favicon.png">
-    <meta property="og:url" content="https://samuelforrest.me">
+    <meta property="og:title" content="Samuel Forrest | CV">
+    <meta property="og:description" content="The professional CV of Samuel Forrest | A Level Student, Tutor, Aviation Enthusiast & Developer">
+    <meta property="og:image" content="https://www.samuelforrest.me/assets/android-chrome-512x512.png">
+    <meta property="og:url" content="https://www.samuelforrest.me">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Samuel Forrest Portfolio">
     <!--Twitter Card Metadata Tags-->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Samuel Forrest | Developer & Aviation Enthusiast">
-    <meta name="twitter:description" content="An A Level Computer Science student and aviation enthusiast. Check out my projects and blog.">
-    <meta name="twitter:image" content="https://samuelforrest.me/images/portfolio-preview.jpg">
+    <meta name="twitter:title" content="Samuel Forrest | CV">
+    <meta name="twitter:description" content="The professional CV of Samuel Forrest | A Level Student, Tutor, Aviation Enthusiast & Developer">
+    <meta name="twitter:image" content="https://www.samuelforrest.me/asssets/android-chrome-512x512.png">
     <meta name="twitter:site" content="@YourTwitterHandle">
     <!-- Mobile App / Progressive Web App Meta Tags -->
     <meta name="theme-color" content="#ffffff">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Samuel Forrest Portfolio">
+    <meta name="apple-mobile-web-app-title" content="Samuel Forrest | CV">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Dublin Core Metadata-->
-    <meta name="DC.title" content="Samuel Forrest Portfolio">
+    <meta name="DC.title" content="Samuel Forrest | CV">
     <meta name="DC.creator" content="Samuel Forrest">
-    <meta name="DC.subject" content="Software Development, Aviation, Portfolio">
-    <meta name="DC.description" content="An A Level Computer Science student and aviation enthusiast. Check out my projects and blog.">
+    <meta name="DC.subject" content="CV, Aviation, Developer, Student, Tutor, Samuel Forrest">
+    <meta name="DC.description" content="The professional CV of Samuel Forrest | A Level Student, Tutor, Aviation Enthusiast & Developer">
     <meta name="DC.publisher" content="Samuel Forrest">
-    <meta name="DC.date" content="2025-02-17">
+    <!--Update Dates Frequently-->
+    <meta name="DC.date" content="2025-04-17">
     <meta name="DC.language" content="en">
     <!--Canonical URL-->
-    <link rel="canonical" href="https://samuelforrest.me">
+    <link rel="canonical" href="https://www.samuelforrest.me">
     <!--Global Favicon-->
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
-    <!--Apple Devices Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://samuelforrest.me/favicon.png">
-    
-</head>
-<body>
-   <div class="container">
-    
-      <nav id="header">
-        <div class="nav-logo">
-            <p class="nav-name">Samuel</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <a href="/cv.pdf" target="_blank"><button class="btn">Download CV <i class="uil uil-import"></i></button></a>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
- 
-    <main class="wrapper">
+    <link rel="icon" href="assets/favicon.ico" type="image/png">
 
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Samuel Forrest</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm a <span class="typedText">Developer, Tutor & Student</span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>I'm an A Level Computer Science and Mathematics student passionate about creating websites and apps. I also have an interest in aviation and flight simulation.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <a href="https://www.linkedin.com/in/samueljforrest/" target="_blank" class="btn blue-btn">Hire Me</a>
-                
-                <a href="/cv.pdf" target="_blank"><button class="btn">Download CV <i class="uil uil-import"></i></button></a>
-            </div>
-            <div class="social_icons">
-                <div class="icon"><a href="https://www.instagram.com/samueljforrest/" target="_blank" aria-label="visit Samuel Forrest's Instagram"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href="https://www.linkedin.com/in/samueljforrest/" target="_blank" aria-label="visit Samuel Forrest's Linkedin"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href="https://github.com/samuelforrest/" target="_blank" aria-label="visit Samuel Forrest's Github"><i class="uil uil-github-alt"></i></a></div>
-                <div class="icon"><a href="https://samuelforrest.blogspot.com/" target="_blank" aria-label="visit Samuel Forrest's Blogger"><i class="uil-blogger-alt"></i></a></div>
-                <div class="icon"><a href="mailto:sam@samuelforrest.me" aria-label="email Samuek Forrest"><i class="uil-envelope"></i></a></div>
+    <!--END OF HEAD-->
 
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/avatar.jpg" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
-       </section>
-       <!--ABOUT SECTION-->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My Experience</h3>
-                    <p>I am well-versed in HTML, CSS and JavaScript, and other cutting-edge
-                       frameworks and libraries, such as React, which allows me to implement interactive features.
-                       Additionally, I have experirence working with content management systems (CMS) like
-                       WordPress and website builders such as Wix and Hostinger.
-                    </p>
-                    <div class="about-btn">
-                        <a href="/cv.pdf" target="_blank"><button class="btn">Download CV <i class="uil uil-import"></i></button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React Native</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>PHP</span>
-                        <span>Python</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-       </section>
-
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>In Progress</h3>
-                <label>- Stock Simulator Application</label>
-                <label>- EPQ on Supersonic Aviation</label>
-                <label>- Computer Science Blog</label>
-                <label>- Starting Web Dev Business</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Tutoring</h3>
-                <label>2+ Happy Clients</label>
-                <label>25+ Lessons Taught</label>
-                <label>Started October 2024</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>5+ Years Developing Websites</label>
-                <labeL>2+ Years Newspaper Website</label>
-            </div>
-          </div>
-       </section>
-       <!--CONTACT SECTION-->>
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: sam@samuelforrest.me</p>
-                    <p><i class="uil uil-phone"></i> WhatsApp: +44 07453 446391</p>
-                    <p><i class="uil uil-map-marker"></i> Location: London, UK</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" id="name" placeholder="Name">
-                        <input type="text" class="input-field" id="email" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn" onclick="sendEmail()">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </section>
-    </main>
-    <!--FOOTER-->
-    <footer>
-        <div class="top-footer">
-            <p>Samuel Forrest .</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-social-icons">
-            <div class="icon"><a href="https://www.instagram.com/samueljforrest/" target="_blank" aria-label="visit Samuel Forrest's Instagram"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href="https://www.linkedin.com/in/samueljforrest/" target="_blank" aria-label="visit Samuel Forrest's Linkedin"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href="https://github.com/samuelforrest/" target="_blank" aria-label="visit Samuel Forrest's Github"><i class="uil uil-github-alt"></i></a></div>
-                <div class="icon"><a href="https://samuelforrest.blogspot.com/" target="_blank" aria-label="visit Samuel Forrest's Blogger"><i class="uil-blogger-alt"></i></a></div>
-                <div class="icon"><a href="mailto:sam@samuelforrest.me" aria-label="email Samuek Forrest"><i class="uil-envelope"></i></a></div>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright 2025 &copy; <a href="#home" style="text-decoration: none;">Samuel Forrest</a> - All rights reserved</p>
-            <p class="last_commit_text">Latest Commit: 17/02/25 at 17:03</p>
-        </div>
-    </footer>
+  </head>
+  <body>
+    <div class="custom-cursor">
+      <div class="plane"></div>
     </div>
+    <div class="portfolio-container">
+      <header class="header">
+        <div class="header-content">
+          <h1 class="name">Samuel Forrest</h1>
+          <p class="title">Aviation Enthusiast & Developer</p>
 
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <span>Teddington, Greater London, UK</span>
+            </div>
 
-</body>
+            <div class="contact-item">
+              <span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </span>
+              <span>sam@samuelforrest.me</span>
+            </div>
+
+            <div class="contact-item">
+              <span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-phone"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              <span>+44 07453 446391</span>
+              <a href="cv.pdf" target="_blank" class="download-cv">Download CV</a>
+              <a href="/about_me.html" target="_blank" class="download-cv">About Me</a>
+
+              
+            </div>
+
+
+          </div>
+        </div>
+        <!--Github Connection-->
+        <div class="social-icons">
+          <a href="https://www.github.com/samuelforrest" target="_blank" class="social-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-github"
+            >
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </a>
+          <!--Linkedin Connection-->
+          <a href="https://www.linkedin.com/in/samueljforrest/" target="_blank" class="social-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <!--Email Connection-->
+          <a href="mailto:sam@samuelforrest.me?subject=Message from {insert name} redirected from samuelforrest.me" target="_blank" class="social-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+          <!--Blogspot Connection-->
+          <a href="https://samuelforrest.blogspot.com/" target="_blank" class="social-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-blogger"
+            >
+              <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5z" />
+              <path d="M8 11h8M8 15h4" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="two-column-layout">
+          <div class="left-column">
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                About Me
+              </h2>
+              <div class="section-content">
+                <p>
+                  A highly motivated student with a keen interest in technology, aviation and engineering. Passionate about developing
+                  websites and applications. I am eager to gain practical experience in software engineering or aviation, where I can
+                  apply my problem-solving and coding skills. I am particularly interested in roles where I can contribute to innovative
+                  projects and learn new skills.
+                </p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                Skills
+              </h2>
+              <div class="section-content">
+                <h3 class="subsection-title">Technical Skills</h3>
+                <p style="margin-bottom:1em;">
+                  Experienced in programming languages and technologies, including HTML, CSS, TypeScript, React Native
+                  and Git/GitHub version control. I have a strong understanding of the airline industry, stemming from
+                  my research for my EPQ. ChatGPT, LLM and AI competence.
+                </p>
+
+                <h3 class="subsection-title">Soft Skills</h3>
+                <p>
+                  I have very strong problem-solving skills and demonstrated my problem solving and mathematical
+                  proficiency in participation of the British Informatics Olympiad and was awarded Bronze award in the
+                  senior UK Maths Challenge. Furthermore, I have developed strong communication & public speaking skills
+                  from my experience in tutoring and the aerospace camp respectively.
+                </p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                Education
+              </h2>
+              <div class="section-content">
+                <h3 class="subsection-title">St George's College, Weybridge</h3>
+                <p class="subsection-title" style="font-size:16.2px;">A Level Student | 2024 - Present</p>
+                <p style="margin-bottom:1em;">
+                  Studying A-Levels in Computer Science, Mathematics, Physics and an EPQ on the reintroduction of
+                  supersonic air transport.
+                </p>
+                
+                <h3 class="subsection-title" style="font-size:16.2px;">GCSE Student | 2021 - 2024</h3>
+                <p>
+                  Achieved very high grades, including Grade 9s (A*) in Physics, Chemistry, Biology, Computer
+                  Science, Geography, Religious Studies, English Language and English Literature. Grade 8 (A*) in
+                  Mathematics. Grade 7 (A) in Latin Language & Literature.
+                </p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                References
+              </h2>
+              <div class="section-content"><i>Available upon request.</i></div>
+            </section>
+
+            <div class="pixels-traveled-counter">Your aircraft has travelled: <span id="pixels-traveled">0</span> pixels</div>
+
+          </div>
+
+          <div class="right-column">
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                Experience
+              </h2>
+              <div class="section-content">
+                <div class="experience-item">
+                  <h3 class="subsection-title">Private Tutor – Computer Science</h3>
+                  <p class="experience-date">October 2024 - Present</p>
+                  <p>
+                    Tutoring GCSE Computer Science students, providing structured 1-hour lessons, study resources and
+                    homework. Taught over 25 hours of lessons.
+                  </p>
+                </div>
+
+                <div class="experience-item">
+                  <h3 class="subsection-title">App Development Shadowing – Hudjo</h3>
+                  <p class="experience-date">August 2024 - September 2024</p>
+                  <p>
+                    I improved my application development skills with the team from the bike app startup HUDJO, which
+                    recently received funding from Deliveroo to expand.
+                  </p>
+                </div>
+
+                <div class="experience-item">
+                  <h3 class="subsection-title">3-Day Aerospace Course - Virgin Atlantic</h3>
+                  <p class="experience-date">August 2024 - September 2024</p>
+                  <p>
+                    Attended a 3-day aerospace course at Kingston University, hosted by Virgin Atlantic. Won the
+                    competition as a team of 4. I improved my communication, leadership and teamworking skills, in
+                    addition to learning a plethora about aerospace engineering.
+                  </p>
+                </div>
+                <div class="experience-item">
+                  <h3 class="subsection-title">Visit - Air Accident Investigation Branch (AAIB)</h3>
+                  <p class="experience-date">April 2025</p>
+                  <p>
+                    Visited the AAIB and connected with professionals including engineering inspectors and flight 
+                    data extraction inspectors.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                Achievements
+              </h2>
+              <div class="section-content">
+                <ul class="achievements-list">
+                  <li>Academic scholarship awarded for academic excellence in 2022, also awarded for Sixth form</li>
+                  <li>
+                    Duke of Edinburgh Award – Completed both Bronze & Silver awards; volunteering at a local church and
+                    rowing 4 times a week at SGCBC.
+                  </li>
+                  <li>
+                    Music – Awarded Grade 7 Saxophone and Grade 4 Piano, actively participating in Jazz Band and Concert
+                    Band, helping younger musicians and improving my teamwork and leadership skills. Awarded half
+                    colours for my commitment.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2 class="section-title">
+                <span class="section-line"></span>
+                Interests
+              </h2>
+              <div class="section-content">
+                <p>
+                  Flight simulation enthusiast, regularly participating in VATSIM events as both pilot and air traffic
+                  controller with vACC Switzerland. Enjoyed rowing for three years, earning medals in various races and
+                  dedicating 4 days a week to train. Recently launched a Computer Science Blog to explore AI and
+                  cybersecurity topics (see blogger link at top of website).
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>© 2025 Samuel Forrest. All rights reserved.</p>
+        <p>Total Views</p>
+        <div align='center'><img src='https://www.free-website-hit-counter.com/zc.php?d=4&id=8621&s=18' border='0'></a><br /></div>
+      </footer>
+    </div>
+    <script>
+      const cursor = document.querySelector('.custom-cursor');
+      const pixelsTraveledElement = document.getElementById('pixels-traveled');
+      let lastX = 0;
+      let lastY = 0;
+      let totalDistance = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        // Move the plane cursor
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+
+        // Create a trail element
+        const trail = document.createElement('div');
+        trail.className = 'trail';
+        trail.style.left = `${e.clientX}px`;
+        trail.style.top = `${e.clientY}px`;
+
+        // Add the trail to the body
+        document.body.appendChild(trail);
+
+        // Remove the trail after the animation ends
+        setTimeout(() => {
+          trail.remove();
+        }, 500); // Match the duration of the fade-out animation
+
+        // Calculate the distance moved
+        const deltaX = e.clientX - lastX;
+        const deltaY = e.clientY - lastY;
+        const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+
+        // Update the total distance traveled
+        totalDistance += distance;
+        pixelsTraveledElement.textContent = Math.round(totalDistance);
+
+        // Only rotate the plane if the distance is greater than 5 pixels
+        if (distance > 5) {
+          const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+          const plane = cursor.querySelector('.plane');
+          plane.style.transform = `rotate(${angle}deg)`;
+
+        // Update the last cursor position
+        lastX = e.clientX;
+        lastY = e.clientY;
+    }
+  });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,295 @@
+:root { /* Root Styling Choices */
+  --font-inter: 'Inter', sans-serif;
+  --background-color: #141429;
+  --text-color: #ffffff;
+  --text-color-secondary: #b0b0c0;
+  --accent-blue: #4a90e2;
+  --accent-purple: #8a63d2;
+  --section-line-color: #4a90e2;
+  --border-color: #2a2a40;
+  --spacing-unit: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  background: radial-gradient(circle at 40% 30%, #aeaec2, #0f0f1f 60%, #a1a1d1 100%);
+  background-size: cover;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #4a90e2, #8a63d2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  color: var(--accent-blue);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: var(--text-color);
+  transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+  color: var(--accent-blue);
+}
+
+.main-content {
+  margin-bottom: 3rem;
+}
+
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.section-line {
+  display: inline-block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: var(--section-line-color);
+  margin-right: 0.75rem;
+}
+
+.section-content {
+  color: var(--text-color-secondary);
+}
+
+.subsection-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.experience-item,
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-date {
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+.education-details {
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+.achievements-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.achievements-list li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.achievements-list li::before {
+  content: "•";
+  position: absolute;
+  left: -1.5rem;
+  color: var(--accent-blue);
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color-secondary);
+  font-size: 0.9rem;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  width: 48px;
+  height: 48px;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+.plane {
+  width: 60px; /* Adjusted size */
+  height: 48px;
+  background-image: url('/plane-icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform-origin: center;
+}
+
+
+.trail {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: fade-out 0.5s ease-out forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+/* Download CV Button */
+.download-cv {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-blue);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: var(--accent-purple);
+}
+
+.pixels-traveled-counter {
+  background-color: var(--accent-blue);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  width: 330px;
+}
+
+.pixels-traveled-counter:hover {
+  background-color: var(--accent-purple);
+}
+
+
+@media (max-width: 768px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-top: 1.5rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 1rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+}
