@@ -1,4 +1,4 @@
-:root { /* Root Styling Choices */
+:root {
   --font-inter: 'Inter', sans-serif;
   --background-color: #141429;
   --text-color: #ffffff;
@@ -34,7 +34,7 @@ body {
   padding: 2rem;
 }
 
-/* Header Styles */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -194,7 +194,7 @@ body {
 }
 
 .plane {
-  width: 60px; /* Adjusted size */
+  width: 60px;
   height: 48px;
   background-image: url('/plane-icon.png');
   background-size: cover;
@@ -225,7 +225,7 @@ body {
   }
 }
 
-/* Download CV Button */
+
 .download-cv {
   display: inline-block;
   margin-left: 1rem;
