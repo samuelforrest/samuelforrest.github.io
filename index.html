@@ -77,6 +77,8 @@
 
   </head>
   <body>
+    <!--START OF BODY-->
+
     <div class="custom-cursor">
       <div class="plane"></div>
     </div>
@@ -406,43 +408,44 @@
       let totalDistance = 0;
 
       document.addEventListener('mousemove', (e) => {
-        // Move the plane cursor
+        // controls moving the plane cursor
         cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 
-        // Create a trail element
+        // creates the contrail style element
         const trail = document.createElement('div');
         trail.className = 'trail';
         trail.style.left = `${e.clientX}px`;
         trail.style.top = `${e.clientY}px`;
 
-        // Add the trail to the body
         document.body.appendChild(trail);
 
-        // Remove the trail after the animation ends
+        // trail removal after 500ms
         setTimeout(() => {
           trail.remove();
-        }, 500); // Match the duration of the fade-out animation
+        }, 500);
 
-        // Calculate the distance moved
+        // calculation of aircraft distance moved
         const deltaX = e.clientX - lastX;
         const deltaY = e.clientY - lastY;
         const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
 
-        // Update the total distance traveled
+        // updates the total distance traveled
         totalDistance += distance;
         pixelsTraveledElement.textContent = Math.round(totalDistance);
 
-        // Only rotate the plane if the distance is greater than 5 pixels
+        // only rotates the plane if the distance is greater than 5 pixels
         if (distance > 5) {
           const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
           const plane = cursor.querySelector('.plane');
           plane.style.transform = `rotate(${angle}deg)`;
 
-        // Update the last cursor position
+        // updates the last cursor position
         lastX = e.clientX;
         lastY = e.clientY;
     }
   });
     </script>
+
+    <!--END OF BODY-->
   </body>
 </html>
