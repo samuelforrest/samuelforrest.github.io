@@ -412,8 +412,12 @@
         scores.sort((a, b) => b.distance - a.distance);
         leaderboardList.innerHTML = '';
         scores.forEach((entry, idx) => {
+          // Convert dashes back to dots for display
+          let displayIP = entry.ip.replace(/-/g, '.');
+          // Mask only the last octet for privacy, but keep it unique per user
+          displayIP = displayIP.replace(/^(\d+\.\d+\.\d+)\.(\d+)$/, '$1.*');
           const you = (entry.ip === userIP) ? ' <b>(You)</b>' : '';
-          leaderboardList.innerHTML += `<li>${entry.distance} pixels${you}</li>`;
+          leaderboardList.innerHTML += `<li>${displayIP}: ${entry.distance} pixels${you}</li>`;
         });
       });
     }
