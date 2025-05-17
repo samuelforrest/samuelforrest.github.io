@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--START OF HEAD-->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBLC7B9NCC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TBLC7B9NCC');
+  </script>
+  <!--Basic Meta Tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--StyleSheet Connectors-->
+  <link rel="stylesheet" href="/assets/globals.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Website Title, Google, Searchbar-->
+  <title>Samuel Forrest | Projects</title>
+  <!--General Favicon-->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <!--16x16 favicon-->
+  <link rel="icon" href="assets/favicon-16x16.png" type="image/png" sizes="16x16">
+  <!--32x32 favicon-->
+  <link rel="icon" href="assets/favicon-32x32.png" type="image/png" sizes="32x32">
+  <!--Android Chrome-->
+  <link rel="icon" href="assets/android-chrome-192x192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/android-chrome-512x512.png" type="image/png" sizes="512x512">
+  <!--Apple touch icon-->
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <!--Optional for specific browsers or platforms-->
+  <meta name="msapplication-TileImage" content="assets/android-chrome-192x192.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <!--Google Meta SEO-->
+  <meta name="description"
+    content="Projects by Samuel Forrest | Aviation Enthusiast & Developer">
+  <meta name="keywords"
+    content="Samuel Forrest, Projects, Aviation, Developer, Software Engineering, React Native, JavaScript, Python, App Developer, Student Developer">
+  <meta name="author" content="Samuel Forrest">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="rating" content="General">
+  <meta name="distribution" content="global">
+  <meta name="geo.region" content="GB">
+  <meta name="geo.placename" content="London, UK">
+  <!--Open Graph Metadata Tags (Social Media)-->
+  <meta property="og:title" content="Samuel Forrest | Projects">
+  <meta property="og:description"
+    content="Projects by Samuel Forrest | Aviation Enthusiast & Developer">
+  <meta property="og:image" content="https://www.samuelforrest.me/assets/android-chrome-512x512.png">
+  <meta property="og:url" content="https://www.samuelforrest.me/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Samuel Forrest Portfolio">
+  <!--Twitter Card Metadata Tags-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Samuel Forrest | Projects">
+  <meta name="twitter:description"
+    content="Projects by Samuel Forrest | Aviation Enthusiast & Developer">
+  <meta name="twitter:image" content="https://www.samuelforrest.me/asssets/android-chrome-512x512.png">
+  <meta name="twitter:site" content="@YourTwitterHandle">
+  <!-- Mobile App / Progressive Web App Meta Tags -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Samuel Forrest | Projects">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Dublin Core Metadata-->
+  <meta name="DC.title" content="Samuel Forrest | Projects">
+  <meta name="DC.creator" content="Samuel Forrest">
+  <meta name="DC.subject" content="Projects, Aviation, Developer, Student, Samuel Forrest">
+  <meta name="DC.description"
+    content="Projects by Samuel Forrest | Aviation Enthusiast & Developer">
+  <meta name="DC.publisher" content="Samuel Forrest">
+  <!--Update Dates Frequently-->
+  <meta name="DC.date" content="2025-05-17">
+  <meta name="DC.language" content="en">
+  <!--Canonical URL-->
+  <link rel="canonical" href="https://www.samuelforrest.me/projects.html">
+  <!--Global Favicon-->
+  <link rel="icon" href="assets/favicon.ico" type="image/png">
+
+  <style>
+
+    body {
+      padding-bottom: 32px;
+    }
+
+    @keyframes fade {
+      to {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #4475b6;
+      margin-bottom: 20px;
+    }
+
+    .section-line {
+      width: 30px;
+      height: 2px;
+      background-color: #4475b6;
+      margin-right: 10px;
+    }
+
+    .section-content {
+      color: #555;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 300px;
+      background-color: #f0f0f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .project-image-fill {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .project-tech {
+      margin-bottom: 15px;
+    }
+
+    .tech-tag {
+      display: inline-block;
+      background-color: #eef2f8;
+      color: #4a90e2;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      background-color: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+    }
+
+    .project-link:hover {
+      background-color: #2c4e7c;
+    }
+
+    .secondary-link {
+      background-color: #f0f0f7;
+      color: #4a90e2;
+    }
+
+    .secondary-link:hover {
+      background-color: #e0e0e7;
+    }
+
+  </style>
+  <!--END OF HEAD-->
+</head>
+
+<body>
+  <!--START OF BODY-->
+
+  <div class="portfolio-container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="name">Samuel Forrest</h1>
+        <p class="title">Aviation Enthusiast & Developer</p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-map-pin">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            <span>Teddington, Greater London, UK</span>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-mail">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </span>
+            <span>sam@samuelforrest.me</span>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </span>
+            <span>+44 07453 446391</span>
+            <a href="samuelforrest.me" target="/" class="download-cv">Back Home</a>
+            <a href="/about_me.html" class="download-cv">About Me</a>
+            <a href="/blog" class="download-cv">Blog</a>
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <!--Github Connection-->
+      <div class="social-icons">
+        <a href="https://www.github.com/samuelforrest" alt="github link" target="_blank" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-github">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+        </a>
+        <!--Linkedin Connection-->
+        <a href="https://www.linkedin.com/in/samueljforrest/" alt="linkedin link" target="_blank" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-linkedin">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <!--Email Connection-->
+        <a href="mailto:sam@samuelforrest.me?subject=Message from {insert name} redirected from samuelforrest.me"
+          alt="email link" target="_blank" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-mail">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+        <!--Blogspot Connection-->
+        <a href="https://samuelforrest.me/blog" alt="blog link" target="_blank" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-blogger">
+            <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5z" />
+            <path d="M8 11h8M8 15h4" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section">
+        <h2 class="section-title" style="color:white;">
+          <span class="section-line"></span>
+          My Projects
+        </h2>
+        <div class="section-content">
+          <p style="margin-bottom: 30px;color:white;">
+            Welcome to my projects page. Here are a collection of my current projects, including aviation projects, applications, websites and computer science projects.
+            As of May 2025, I am working on 4 projects. 
+          </p>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/assets/overture.jpg" alt="EPQ Project">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">EPQ: "To what extent is it feasible to reintroduce commerical supersonic air travel by the year 2040</h3>
+              <p class="project-description">
+                For my EPQ (Extended Project Qualification), I’m researching the question: 
+                “To what extent is it feasible to reintroduce commercial supersonic air travel by 2040?” 
+                This project combines my interests in aviation and engineering.
+                It involves detailed investigation into the economic, environmental, regulatory, safety and technological factors. 
+                The final report presents a realistic assessment of the barriers and breakthroughs 
+                required to bring faster-than-sound passenger travel back into the skies. ✈️🔬
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Writing Skills</span>
+                <span class="tech-tag">EPQ</span>
+              </div>
+                <a href="/assets/epq_abstract.pdf" target="_blank" class="project-link">
+                  View Abstract (Draft)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/assets/stocksimulator.jpg" alt="EPQ Project">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NEA: Stock Simulator Mobile Application for Beginners</h3>
+              <p class="project-description">
+                As part of my A-Level Computer Science course, I’m developing a custom-built software application from scratch as my Non-Exam Assessment (NEA). My project is a stock market simulator app, designed to teach users how buying and selling shares works in a simplified, interactive environment. It includes real-time-inspired price changes, portfolio tracking, and detailed performance feedback. The aim is to combine coding, problem-solving, and real-world finance concepts into a functional and educational tool — perfect for students or beginners looking to explore investment basics. 🚀📊
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Databases</span>
+                <span class="tech-tag">Documentation</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Figma (IOS/Android)</span>
+              </div>
+              <div class="project-links">
+                <a href="/404.html" class="project-link" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  Code Release: Mar 2026
+                </a>
+                <a href="/404.html" class="project-link secondary-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12h10"></path>
+                    <path d="M9 7.5 13.5 12 9 16.5"></path>
+                    <path d="M17 17h5"></path>
+                    <path d="M19 19v-5"></path>
+                  </svg>
+                  Documentation Release: June 2026
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/assets/blog.jpg" alt="EPQ Project">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Samuel's Blog: A Blog offering a unique perspective on developments in the AI, Computer Science and Aviation spaces.</h3>
+              <p class="project-description">
+                Welcome to Samuel’s Blog — a space where I share a unique perspective on emerging trends and insights across AI, Computer Science, and Aviation. Whether it’s exploring breakthroughs in artificial intelligence, diving into programming concepts, or analysing innovations in aerospace, this blog blends technical depth with personal curiosity. Ideal for students, enthusiasts, and future engineers alike. 🚀📘💻
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Databases</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Lovable</span>
+                <span class="tech-tag">Independent Research</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/samuelforrest/blog" class="project-link" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  Code
+                </a>
+                <a href="https://www.samuelforrest.me/blog" class="project-link secondary-link" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12h10"></path>
+                    <path d="M9 7.5 13.5 12 9 16.5"></path>
+                    <path d="M17 17h5"></path>
+                    <path d="M19 19v-5"></path>
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/assets/notion.png" alt="Apple Screen Time Apis">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Computer Science Resource Pack</h3>
+              <p class="project-description">
+                Alongside my tutoring work, I’ve started creating Computer Science resource packs using Notion, AI tools, and my hands-on experience from both GCSE and A-Level Computing. These packs are designed to make complex topics clearer, more interactive, and easier to revise — perfect for students looking for structured, high-quality support. They’ll be available soon via Notion.so or directly through my website. Stay tuned! 🧠
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Notion</span>
+                <span class="tech-tag">ChatGPT</span>
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Tutoring</span>
+                <span class="tech-tag">Computer Science</span>
+              </div>
+                <a href="https://samuelforrest.notion.site/A-Level-Computer-Science-Notes-OCR-H446-Specification-1f6f86b8ee7c807f935ef99dd1e4929f" class="project-link" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12h10"></path>
+                    <path d="M9 7.5 13.5 12 9 16.5"></path>
+                    <path d="M17 17h5"></path>
+                    <path d="M19 19v-5"></path>
+                  </svg>
+                  View Alpha
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Samuel Forrest. All rights reserved.</p>
+    <p>Hosted by <a href="https://github.com/samuelforrest/samuelforrest.github.io" target="_blank"
+      style="color: white;">Github®</a> and <a href="https://www.namecheap.com" target="_blank"
+      style="color: white;">Namecheap®</a></p>
+  </footer>
+
+  
+  <!--END OF BODY-->
+</body>
+
+</html>
