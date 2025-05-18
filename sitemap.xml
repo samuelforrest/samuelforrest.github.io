@@ -1,31 +1,40 @@
+<!--Sitemap for Google/Bing crawlers-->
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://samuelforrest.me/</loc>
-  <lastmod>2025-04-27T14:07:22+00:00</lastmod>
+  <lastmod>2025-05-17T22:07:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://samuelforrest.me/cv.pdf</loc>
-  <lastmod>2025-04-27T14:07:22+00:00</lastmod>
+  <lastmod>2025-05-17T22:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samuelforrest.me/about_me.html</loc>
-  <lastmod>2025-04-27T14:07:22+00:00</lastmod>
+  <loc>https://samuelforrest.me/projects.html</loc>
+  <lastmod>2025-05-17T22:07:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://samuelforrest.me/blog/</loc>
-  <lastmod>2025-04-27T14:09:07+00:00</lastmod>
+  <lastmod>2025-04-27T19:22:07+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://samuelforrest.me/assets/epq_abstract.pdf</loc>
+  <lastmod>2025-05-17T22:07:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://samuelforrest.me/404.html</loc>
+  <lastmod>2025-05-17T22:07:58+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
